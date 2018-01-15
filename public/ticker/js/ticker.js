@@ -56,8 +56,8 @@ var coinIO = io.connect('https://streamer.cryptocompare.com/');
 var subscriptions = [
   '5~CCCAGG~BTC~USD',
   '5~CCCAGG~LTC~USD',
-  '5~CCCAGG~MOON~BTC',
-  '5~CCCAGG~LINX~BTC',
+  '5~CCCAGG~MOON~USD',
+  '5~CCCAGG~LINX~USD',
   '5~CCCAGG~XRP~USD',
   '5~CCCAGG~XVG~USD',
   '5~CCCAGG~ETH~USD',
