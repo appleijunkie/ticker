@@ -3,21 +3,13 @@ vueStocks = new Vue({
   data: {
     stocks: {
       "BTC": {},
-      "ZEC": {},
       "LTC": {},
-      "ETH": {},
-      "ETC": {},
-      "XEM": {},
-      "DASH": {},
-      "BCH": {},
-      "XMR": {},
+      "MOON": {},
+      "LINX": {},
       "XRP": {},
-      "LSK": {},
-      "OMG": {},
-      "NEO": {},
-      "NXT": {},
-      "DOGE": {},
-      "IOT": {}
+      "XVG": {},
+      "ETH": {},
+      "BCH": {}
     }
   },
   methods: {
@@ -36,10 +28,8 @@ vueStocks = new Vue({
 
 
 var stocks = [
-    "BTC", "ZEC", "LTC", "ETH",
-    "ETC", "XEM", "BCH", "DASH",
-    "XMR", "XRP", "LSK", "OMG",
-    "NEO", "NXT", "DOGE", "IOT"
+    "BTC", "LTC", "MOON", "LINX",
+    "XRP", "XVG", "ETH", "BCH"
 ];
 var stocks = stocks.toString();
 var url = "https://min-api.cryptocompare.com/data/pricemulti?fsyms="+ stocks +"&tsyms=USD";
@@ -64,22 +54,14 @@ function updateStocks(stocks) {
 
 var coinIO = io.connect('https://streamer.cryptocompare.com/');
 var subscriptions = [
-  '5~CCCAGG~BCH~USD',
   '5~CCCAGG~BTC~USD',
-  '5~CCCAGG~ZEC~USD',
   '5~CCCAGG~LTC~USD',
-  '5~CCCAGG~DASH~USD',
-  '5~CCCAGG~ETH~USD',
-  '5~CCCAGG~ETC~USD',
-  '5~CCCAGG~XMR~USD',
+  '5~CCCAGG~MOON~BTC',
+  '5~CCCAGG~LINX~BTC',
   '5~CCCAGG~XRP~USD',
-  '5~CCCAGG~LSK~USD',
-  '5~CCCAGG~OMG~USD',
-  '5~CCCAGG~XEM~USD',
-  '5~CCCAGG~NEO~USD',
-  '5~CCCAGG~NXT~USD',
-  '5~CCCAGG~DOGE~USD',
-  '5~CCCAGG~IOT~USD',
+  '5~CCCAGG~XVG~USD',
+  '5~CCCAGG~ETH~USD',
+  '5~CCCAGG~BCH~USD',
 ];
 
 coinIO.emit('SubAdd', {subs:subscriptions} );
