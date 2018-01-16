@@ -1,4 +1,4 @@
-<h1>AIJ Nodes - Real-time coin transactions ticker & landing page</h1>
+<h1>(Ticker) AIJ Nodes - Real-time coin transactions ticker & landing page</h1>
 
 <img src="http://ticker.unicogent.com/ticker/img/ticker.gif" alt="TICKER - Real-time coin transactions ticker">
 
