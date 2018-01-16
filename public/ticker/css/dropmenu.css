@@ -6,6 +6,7 @@ menu {
 }
 
 .dropbtn {
+    background-color: rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
     height: 50px;
@@ -22,7 +23,6 @@ menu {
 .dropdown {
     position: relative;
     display: inline-block;
-    background-color: rgba(0,0,0,0.5);
 }
 
 .dropdown-content {
