@@ -93,6 +93,7 @@ body {
   min-height: 1px; 
 }
 
+.col-xs-2 {width: 10%;}
 .col-xs-3 {width: 25%;}
 .col-xs-4 {width: 33.33%;}
 .col-xs-6 {width: 50%;}
